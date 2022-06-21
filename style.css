@@ -7,6 +7,13 @@ body{
     font-size: 18px;
 
 }
+h2, h3{
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
 header{
     background-image: url(./bg-hero-desktop.svg);
    background-color: hsl(193, 100%, 96%); 
@@ -16,7 +23,6 @@ header{
     margin-top: 30px;  
 }
 .btn1{
-    
     text-align: center;
     border-radius: 20px;
     width: 20%;
@@ -25,9 +31,18 @@ header{
     color:hsl(192, 100%, 9%);
     border: none;
     margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
     cursor: pointer;
+    animation-name: choice;
+    animation-duration: 4s;
     
 }
+@keyframes choice{
+    from {background-color: white;}
+    to {background-color:hsl(322, 56%, 74%);}
+}
+    
+
 .flex{
     width: 100%;
     padding: 0px 80px;
@@ -61,14 +76,22 @@ header{
     background-color:hsl(322, 100%, 66%);
     color:  hsl(193, 100%, 96%);
     border: none;
+    font-family: 'Open Sans', sans-serif;
     cursor: pointer;
     
+}
+.btn2:hover{
+    background-color:hsl(322, 56%, 74%);
 }
 h2{
     color:hsl(192, 100%, 9%);
 }
 p{
     color: hsl(208, 11%, 55%);
+}
+.community{
+    color:hsl(192, 100%, 9%);
+    font-size: 14px;
 }
 .image1{
     flex: 50%;
@@ -150,56 +173,126 @@ p{
     top: 4rem;
 }
 .btn3{
-    margin-top: 1%;
+    margin-top: 5%;
     text-align: center;
     border-radius: 50px;
-    width: 30%;
-    padding: 20px 20px;
+    width: 50%;
+    padding: 15px 15px;
     background-color: hsl(322, 100%, 66%);
     color: hsl(193, 100%, 96%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     border: none;
     cursor: pointer;
+}
+.btn3:hover{
+    background-color:hsl(322, 56%, 74%);
 }
 .build{
     font-size: 20px;
 }
 
 
-.container{
-    max-width: 1170px;
-    margin: auto;
+footer{
     background-color: hsl(192, 100%, 9%);
-    color: hsl(193, 100%, 96%);
+    width: 100%;
+    color: white;
+    padding: 7rem 7rem 5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 
 }
-.row{
-    display:flex;
-    flex-wrap: wrap;
+.footer-body{
+    display:grid;
+    justify-content: start;
+    grid-template-columns: 380px 300px auto;
+    grid-gap:6rem;
 }
 ul{
     list-style: none;
 }
-.footer{
-    background-color:hsl(192, 100%, 9%);
-    padding: 50px 0;
+.contact-info{
+    padding: 1rem 0;
 }
-.footer-col{
-    width: 25%;
-    padding: 0, 15%;
+.contact-info-details{
+    display:grid;
+    grid-template-columns: 25px 380px;
+    grid-gap: 1rem;
+    padding: 1rem 0;
+    line-height: 1.5;
+
+}
+.contact-info-details > img{
+    vertical-align: middle;
+}
+.contact-info-details > p{
+    color: white;
+}
+
+.footer-nav{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    align-items: baseline;
+    padding: 1rem 0;
     
 }
-.logo{
-    color:hsl(193, 100%, 96%);
+.footer-nav:hover{
+    text-decoration: underline;
+    transition: 0.4secs;
 }
-.about{
-    margin-top: 15%;
-}
-a{
+.social-sec > a{
+    color: hsl(193, 100%, 96%);
     border: 1px solid white;
-    padding: 5px;
     border-radius: 50%;
-   color:hsl(193, 100%, 96%);
+    margin-right:0.4rem;
+    padding: 5px;
+    
 }
-.under{
-    margin-top: 10rem;
+.social-sec > a:hover{
+    color:hsl(322, 100%, 66%);
 }
+
+.footer-nav li{
+    padding: 0.4rem;
+   
+}
+.footer-nav a{
+    text-decoration: none;
+    color: hsl(193, 100%, 96%);
+
+}
+.copyright-section{
+    text-align: right;
+    font-size: 15px;
+  
+}
+
+/* Media queries*/
+
+@media screen and (max-width: 1000px){
+    .footer-body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-info-details{
+        display:flex;
+        flex-direction: flex-start;
+    }
+    .footer-nav{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 0;
+    }
+    .social-sec{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .copyright-section{
+        text-align: center;
+    }
+    
+    
+}
+

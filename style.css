@@ -7,7 +7,7 @@ body{
     font-size: 18px;
 
 }
-h2, h3{
+h1, h2{
     font-family: 'Poppins', sans-serif;
 }
 p{
@@ -15,7 +15,7 @@ p{
     font-size: 16px;
 }
 header{
-    background-image: url(./bg-hero-desktop.svg);
+   background-image: url(./bg-hero-desktop.svg);
    background-color: hsl(193, 100%, 96%); 
   
 }
@@ -91,7 +91,7 @@ p{
 }
 .community{
     color:hsl(192, 100%, 9%);
-    font-size: 14px;
+    font-size: 18px;
 }
 .image1{
     flex: 50%;
@@ -270,6 +270,10 @@ ul{
 /* Media queries*/
 
 @media screen and (max-width: 1000px){
+    header{
+        background-image: url(./bg-hero-mobile.svg);
+        background-color: hsl(193, 100%, 96%);
+    }
     .footer-body{
         width: 100%;
         display: flex;
@@ -292,6 +296,37 @@ ul{
     .copyright-section{
         text-align: center;
     }
+    .image{
+        margin-top: 30px; 
+        width: 20%;
+    }  
+    }   
+
+    @media screen and (max-width: 375px){
+    .btn1{
+        padding: 5px 5px;
+        font-size: 14px;
+        width: 50%;
+    }
+    
+    .btn2 .bt3{
+        padding: 2px 2px;
+        width: 50%;
+        text-align: center;
+        align-items: center;
+
+    }
+    p{
+        text-align: center;
+    }
+    .ready{
+        width: 90%;
+        
+    }
+    h1 h2{
+        text-align: center;
+    }
+
     
     
 }

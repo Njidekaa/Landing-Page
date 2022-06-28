@@ -272,10 +272,11 @@ ul{
 
 /* Media queries*/
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 600px){
     header{
         background-image: url(./bg-hero-mobile.svg);
         background-color: hsl(193, 100%, 96%);
+        
     }
     .footer-body{
         width: 100%;
@@ -299,10 +300,62 @@ ul{
     .copyright-section{
         text-align: center;
     }
-    .image{
-        margin-top: 30px; 
-        width: 20%;
-    }  
+    .heading2{
+        display: flex;
+        flex-direction: column;
+    }
+    .growth{
+        display: flex;
+        flex-direction: column;
+    }
+    .flowing{
+        display: flex;
+        flex-direction: column;
+    }
+    .users{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    h1{
+        text-align: center;
+        font-size: 16px;
+    }
+    h2{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .nav img{
+        margin-top: 2rem;
+        width: 40%;
+    }
+    .btn1{
+        padding: 5px 5px;
+        font-size: 14px;
+        width: 40%;
+
+    }
+    .community{
+        font-size: 16px;
+    }
+    
+    .btn2 {
+        padding: 2px 2px;
+        width: 60%;
+        text-align: center;
+        align-items: center;
+       margin-left: 2.5rem;
+    }
+    .btn3 {
+        padding: 2px 2px;
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        font-size: 12px;
+
+    }
     }   
 
     @media screen and (max-width: 375px){
@@ -328,9 +381,7 @@ ul{
         align-items: center;
 
     }
-    p{
-        text-align: center;
-    }
+    
     .ready{
         width: 90%;    
     }

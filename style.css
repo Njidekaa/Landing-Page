@@ -56,6 +56,9 @@ header{
     position: relative;
     
 }
+.nav img{
+    margin-top: 5rem;
+}
 
 .heading2{
     display: flex;
@@ -303,15 +306,24 @@ ul{
     }   
 
     @media screen and (max-width: 375px){
+    
     .btn1{
         padding: 5px 5px;
         font-size: 14px;
         width: 50%;
+
     }
     
-    .btn2 .bt3{
+    .btn2 {
         padding: 2px 2px;
-        width: 50%;
+        width: 70%;
+        text-align: center;
+        align-items: center;
+
+    }
+    .btn3 {
+        padding: 2px 2px;
+        width: 70%;
         text-align: center;
         align-items: center;
 
@@ -323,11 +335,19 @@ ul{
         width: 90%;    
     }
     
-    h1 h2{
+    h1{
         text-align: center;
+        font-size: 16px;
+    }
+    h2{
+        text-align: center;
+        font-size: 16px;
     }
 
-    
+    .nav img{
+        margin-top: 2rem;
+        width: 40%;
+    }
     
 }
 
